@@ -3,17 +3,41 @@
 const profit = 'freelance';
 const purpose = 80000;
 const period = 4;
-const money = prompt(`Ваш месячный доход?`);
-const extraMoney = prompt(`Перечислите возможный доход за ваши дополнительные работы: ${profit}?`);
 const expenses = prompt(`Перечислите возможные расходы за рассчитываемый период через запятую`);
-const amount = prompt(`Во сколько обойдутся обязательные статьи расходов?`);
+
+let money;
+while (true) {
+  money = +prompt(`Ваш месячный доход?`);
+  if (isFinite(money)) break;
+  alert('Введите число');
+}
+
+let extraMoney;
+while (true) {
+  extraMoney = +prompt(`Перечислите возможный доход за ваши дополнительные работы: ${profit}?`);
+  if (isFinite(extraMoney)) break;
+  alert('Введите число');
+}
+
+let amount;
+while (true) {
+  amount = +prompt(`Во сколько обойдутся обязательные статьи расходов?`);
+  if (isFinite(amount)) break;
+  alert('Введите число');
+}
+
 const deposit = confirm(`Есть ли у вас вклад в банке?`);
 const accumulatedIncome = getAccumulatedIncome();
 const budgetDay = Math.floor(accumulatedIncome / 30);
 
 console.log('Ваш бюджет на месяц с учетом ваших расходов составляет: ', getAccumulatedIncome());
-console.log(`Ваша цель накопить ${purpose} с учетом всех ваших расходов будет достигнута через`, getTargetMonth() + ' месяца');
 console.log('Дневной бюджет', budgetDay);
+
+if (getTargetMonth() > 0) {
+  console.log(`Ваша цель накопить ${purpose} с учетом всех ваших расходов будет достигнута через`, getTargetMonth() + ' месяца');
+} else {
+  console.log('Цель не будет достигнута');
+}
 
 function getAccumulatedIncome() {
   return money - amount + extraMoney;
