@@ -1,0 +1,132 @@
+.registration {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 82px;
+  padding: 30px 45px 26px 45px;
+  background-color: #fff;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  text-align: center;
+  color: $mainColor1;
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
+
+  &__email,
+  &__pass {
+    position: relative;
+    padding-left: 11px;
+    align-self: stretch;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+
+    & span {
+      position: absolute;
+      left: 0;
+      top: 24px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    & label {
+      padding-left: 10px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 16px;
+      cursor: pointer;
+    }
+
+    & input {
+      padding: 7px 0 7px 15px;
+      border: 2px solid #787878;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 36px;
+      color: $mainColor1;
+
+      &::placeholder {
+        font-size: 28px;
+        line-height: 36px;
+        color: #CCCCCC;
+
+      }
+    }
+  }
+
+  &__checkbox {
+    position: relative;
+    padding-left: 11px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    & span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    & label {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      border: 2px solid #787878;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+
+    & input {
+      position: absolute;
+      right: 9999px;
+
+      &:checked {
+        &+label::before {
+          content: url('/images/mark.svg');
+          display: block;
+          width: 17px;
+          height: 17px;
+          position: absolute;
+          left: 2px;
+          top: 3px;
+        }
+      }
+    }
+
+    & p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+  }
+}

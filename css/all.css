@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 15px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background-color: #1B2473;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 16px;
+  color: #FFFFFF;
+  padding: 18px;
+  background-color: #1A226B;
+  border-radius: 10px;
+}
+
+.registration {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 82px;
+  padding: 30px 45px 26px 45px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  text-align: center;
+  color: #787878;
+}
+
+.registration__title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.registration__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 15px;
+}
+
+.registration__email, .registration__pass {
+  position: relative;
+  padding-left: 11px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2px;
+}
+
+.registration__email span, .registration__pass span {
+  position: absolute;
+  left: 0;
+  top: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.registration__email label, .registration__pass label {
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.registration__email input, .registration__pass input {
+  padding: 7px 0 7px 15px;
+  border: 2px solid #787878;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #787878;
+}
+
+.registration__email input::-webkit-input-placeholder, .registration__pass input::-webkit-input-placeholder {
+  font-size: 28px;
+  line-height: 36px;
+  color: #CCCCCC;
+}
+
+.registration__email input:-ms-input-placeholder, .registration__pass input:-ms-input-placeholder {
+  font-size: 28px;
+  line-height: 36px;
+  color: #CCCCCC;
+}
+
+.registration__email input::-ms-input-placeholder, .registration__pass input::-ms-input-placeholder {
+  font-size: 28px;
+  line-height: 36px;
+  color: #CCCCCC;
+}
+
+.registration__email input::placeholder, .registration__pass input::placeholder {
+  font-size: 28px;
+  line-height: 36px;
+  color: #CCCCCC;
+}
+
+.registration__checkbox {
+  position: relative;
+  padding-left: 11px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.registration__checkbox span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.registration__checkbox label {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #787878;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.registration__checkbox input {
+  position: absolute;
+  right: 9999px;
+}
+
+.registration__checkbox input:checked + label::before {
+  content: url("/images/mark.svg");
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 2px;
+  top: 3px;
+}
+
+.registration__checkbox p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.registration__checkbox p a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+.registration__button {
+  margin-top: 30px;
+}

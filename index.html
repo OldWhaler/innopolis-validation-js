@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css">
   <title>module_two_javascript_exam</title>
 </head>
+
 <body>
-  
+  <div class="container">
+    <section class="registration">
+      <h1 class="registration__title">Регистрация</h1>
+      <form action="#" class="registration__form" method="post">
+        <div class="registration__email">
+          <span>*</span>
+          <label for="mail">Email</label>
+          <input type="email" id="mail" name="user_email" placeholder="Введите email" required>
+        </div>
+        <div class="registration__pass">
+          <span>*</span>
+          <label for="pass">Пароль</label>
+          <input type="password" id="pass" name="user_pass" placeholder="Введите пароль" minlength="8" required>
+        </div>
+        <div class="registration__checkbox">
+          <span>*</span>
+          <input type="checkbox" id="checkbox" required>
+          <label for="checkbox"></label>
+          <p>Я согласен с <a href="#">Правилами пользования приложением</a></p>
+        </div>
+        <button type="submit" class="registration__button button">Регистрация</button>
+      </form>
+    </section>
+  </div>
   <script src="./script.js"></script>
 </body>
+
 </html>
