@@ -1,0 +1,14 @@
+.warning {
+  color: $warningColor;
+
+  & input {
+    border: 2px solid $warningColor;
+  }
+}
+
+.warning-text {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: $warningColor;
+}

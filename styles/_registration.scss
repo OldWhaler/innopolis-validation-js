@@ -53,7 +53,7 @@
 
     & input {
       padding: 7px 0 7px 15px;
-      border: 2px solid #787878;
+      border: 2px solid $mainColor1;
       border-radius: 10px;
       font-weight: 700;
       font-size: 28px;
@@ -71,11 +71,20 @@
 
   &__checkbox {
     position: relative;
-    padding-left: 11px;
-    align-self: stretch;
     display: flex;
-    align-items: center;
-    column-gap: 10px;
+    flex-direction: column;
+    align-self: stretch;
+    row-gap: 2px;
+    text-align: start;
+    padding-left: 11px;
+
+    &-wrapper {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
 
     & span {
       position: absolute;
@@ -83,14 +92,14 @@
       top: 0;
       font-weight: 700;
       font-size: 18px;
-      line-height: 18px;
     }
 
     & label {
       position: relative;
+      display: inline-block;
       width: 24px;
       height: 24px;
-      border: 2px solid #787878;
+      border: 2px solid $mainColor1;
       border-radius: 7px;
       cursor: pointer;
     }
@@ -112,10 +121,10 @@
       }
     }
 
-    & p {
+    &-text {
       font-weight: 400;
       font-size: 14px;
-      line-height: 16px;
+      line-height: 24px;
 
       a {
         font-weight: 400;

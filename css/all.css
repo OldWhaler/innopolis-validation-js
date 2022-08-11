@@ -212,9 +212,22 @@ body {
 
 .registration__checkbox {
   position: relative;
-  padding-left: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-item-align: stretch;
       align-self: stretch;
+  row-gap: 2px;
+  text-align: start;
+  padding-left: 11px;
+}
+
+.registration__checkbox-wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,11 +244,11 @@ body {
   top: 0;
   font-weight: 700;
   font-size: 18px;
-  line-height: 18px;
 }
 
 .registration__checkbox label {
   position: relative;
+  display: inline-block;
   width: 24px;
   height: 24px;
   border: 2px solid #787878;
@@ -258,13 +271,13 @@ body {
   top: 3px;
 }
 
-.registration__checkbox p {
+.registration__checkbox-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
 }
 
-.registration__checkbox p a {
+.registration__checkbox-text a {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -273,4 +286,19 @@ body {
 
 .registration__button {
   margin-top: 30px;
+}
+
+.warning {
+  color: #CB2424;
+}
+
+.warning input {
+  border: 2px solid #CB2424;
+}
+
+.warning-text {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #CB2424;
 }

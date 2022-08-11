@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/all.css">
   <title>module_two_javascript_exam</title>
 </head>
@@ -16,7 +16,7 @@
   <div class="container">
     <section class="registration">
       <h1 class="registration__title">Регистрация</h1>
-      <form action="#" class="registration__form" method="post">
+      <form action="#" class="registration__form" method="get" name="registration">
         <div class="registration__email">
           <span>*</span>
           <label for="mail">Email</label>
@@ -28,12 +28,16 @@
           <input type="password" id="pass" name="user_pass" placeholder="Введите пароль" minlength="8" required>
         </div>
         <div class="registration__checkbox">
-          <span>*</span>
-          <input type="checkbox" id="checkbox" required>
-          <label for="checkbox"></label>
-          <p>Я согласен с <a href="#">Правилами пользования приложением</a></p>
+          <span id="checkbox-span">*</span>
+          <div class="registration__checkbox-wrapper">
+            <input type="checkbox" id="checkbox" required>
+            <label for="checkbox" id="checkbox-label"></label>
+            <p class="registration__checkbox-text" id="checkbox-text">Я согласен с <a href="#">Правилами пользования
+                приложением</a></p>
+          </div>
+
         </div>
-        <button type="submit" class="registration__button button">Регистрация</button>
+        <input type="submit" id="button" class="registration__button button" value="Регистрация">
       </form>
     </section>
   </div>
