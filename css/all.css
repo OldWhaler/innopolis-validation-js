@@ -98,6 +98,10 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .button {
   font-weight: 700;
   font-size: 24px;
@@ -119,7 +123,7 @@ body {
   background-color: transparent;
 }
 
-.registration {
+.form {
   position: relative;
   width: 600px;
   margin-left: auto;
@@ -133,13 +137,13 @@ body {
   text-align: center;
   color: #787878;
 }
-.registration__title {
+.form__title {
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
 }
-.registration__form {
+.form__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,7 +156,7 @@ body {
           align-items: center;
   row-gap: 15px;
 }
-.registration__email, .registration__pass {
+.form__email, .form__pass {
   position: relative;
   padding-left: 11px;
   -ms-flex-item-align: stretch;
@@ -167,7 +171,7 @@ body {
           flex-direction: column;
   row-gap: 2px;
 }
-.registration__email span, .registration__pass span {
+.form__email span, .form__pass span {
   position: absolute;
   left: 0;
   top: 24px;
@@ -175,14 +179,14 @@ body {
   font-size: 18px;
   line-height: 18px;
 }
-.registration__email label, .registration__pass label {
+.form__email label, .form__pass label {
   padding-left: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
   cursor: pointer;
 }
-.registration__email input, .registration__pass input {
+.form__email input, .form__pass input {
   padding: 7px 0 7px 15px;
   border: 2px solid #787878;
   border-radius: 10px;
@@ -191,32 +195,32 @@ body {
   line-height: 36px;
   color: #787878;
 }
-.registration__email input::-webkit-input-placeholder, .registration__pass input::-webkit-input-placeholder {
+.form__email input::-webkit-input-placeholder, .form__pass input::-webkit-input-placeholder {
   font-size: 28px;
   line-height: 36px;
   color: #CCCCCC;
 }
-.registration__email input::-moz-placeholder, .registration__pass input::-moz-placeholder {
+.form__email input::-moz-placeholder, .form__pass input::-moz-placeholder {
   font-size: 28px;
   line-height: 36px;
   color: #CCCCCC;
 }
-.registration__email input:-ms-input-placeholder, .registration__pass input:-ms-input-placeholder {
+.form__email input:-ms-input-placeholder, .form__pass input:-ms-input-placeholder {
   font-size: 28px;
   line-height: 36px;
   color: #CCCCCC;
 }
-.registration__email input::-ms-input-placeholder, .registration__pass input::-ms-input-placeholder {
+.form__email input::-ms-input-placeholder, .form__pass input::-ms-input-placeholder {
   font-size: 28px;
   line-height: 36px;
   color: #CCCCCC;
 }
-.registration__email input::placeholder, .registration__pass input::placeholder {
+.form__email input::placeholder, .form__pass input::placeholder {
   font-size: 28px;
   line-height: 36px;
   color: #CCCCCC;
 }
-.registration__checkbox {
+.form__checkbox {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,7 +235,7 @@ body {
   text-align: start;
   padding-left: 11px;
 }
-.registration__checkbox-wrapper {
+.form__checkbox-wrapper {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,14 +247,14 @@ body {
      -moz-column-gap: 10px;
           column-gap: 10px;
 }
-.registration__checkbox span {
+.form__checkbox span {
   position: absolute;
   left: 0;
   top: 0;
   font-weight: 700;
   font-size: 18px;
 }
-.registration__checkbox label {
+.form__checkbox label {
   position: relative;
   display: inline-block;
   width: 24px;
@@ -259,11 +263,11 @@ body {
   border-radius: 7px;
   cursor: pointer;
 }
-.registration__checkbox input {
+.form__checkbox input {
   position: absolute;
   right: 9999px;
 }
-.registration__checkbox input:checked + label::before {
+.form__checkbox input:checked + label::before {
   content: url("/images/mark.svg");
   display: block;
   width: 17px;
@@ -272,18 +276,18 @@ body {
   left: 2px;
   top: 3px;
 }
-.registration__checkbox-text {
+.form__checkbox-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 }
-.registration__checkbox-text a {
+.form__checkbox-text a {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-decoration: underline;
 }
-.registration__button {
+.form__button {
   margin-top: 30px;
 }
 
