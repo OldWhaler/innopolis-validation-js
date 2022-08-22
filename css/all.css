@@ -89,7 +89,7 @@ h6 {
 
 body {
   background-color: #1B2473;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -108,7 +108,19 @@ body {
   border-radius: 10px;
 }
 
+.change-form {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1A226B;
+  background-color: transparent;
+}
+
 .registration {
+  position: relative;
   width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -121,14 +133,12 @@ body {
   text-align: center;
   color: #787878;
 }
-
 .registration__title {
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
 }
-
 .registration__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,7 +152,6 @@ body {
           align-items: center;
   row-gap: 15px;
 }
-
 .registration__email, .registration__pass {
   position: relative;
   padding-left: 11px;
@@ -158,7 +167,6 @@ body {
           flex-direction: column;
   row-gap: 2px;
 }
-
 .registration__email span, .registration__pass span {
   position: absolute;
   left: 0;
@@ -167,7 +175,6 @@ body {
   font-size: 18px;
   line-height: 18px;
 }
-
 .registration__email label, .registration__pass label {
   padding-left: 10px;
   font-weight: 700;
@@ -175,7 +182,6 @@ body {
   line-height: 16px;
   cursor: pointer;
 }
-
 .registration__email input, .registration__pass input {
   padding: 7px 0 7px 15px;
   border: 2px solid #787878;
@@ -185,31 +191,31 @@ body {
   line-height: 36px;
   color: #787878;
 }
-
 .registration__email input::-webkit-input-placeholder, .registration__pass input::-webkit-input-placeholder {
   font-size: 28px;
   line-height: 36px;
   color: #CCCCCC;
 }
-
+.registration__email input::-moz-placeholder, .registration__pass input::-moz-placeholder {
+  font-size: 28px;
+  line-height: 36px;
+  color: #CCCCCC;
+}
 .registration__email input:-ms-input-placeholder, .registration__pass input:-ms-input-placeholder {
   font-size: 28px;
   line-height: 36px;
   color: #CCCCCC;
 }
-
 .registration__email input::-ms-input-placeholder, .registration__pass input::-ms-input-placeholder {
   font-size: 28px;
   line-height: 36px;
   color: #CCCCCC;
 }
-
 .registration__email input::placeholder, .registration__pass input::placeholder {
   font-size: 28px;
   line-height: 36px;
   color: #CCCCCC;
 }
-
 .registration__checkbox {
   position: relative;
   display: -webkit-box;
@@ -225,7 +231,6 @@ body {
   text-align: start;
   padding-left: 11px;
 }
-
 .registration__checkbox-wrapper {
   position: relative;
   display: -webkit-box;
@@ -235,9 +240,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
           column-gap: 10px;
 }
-
 .registration__checkbox span {
   position: absolute;
   left: 0;
@@ -245,7 +250,6 @@ body {
   font-weight: 700;
   font-size: 18px;
 }
-
 .registration__checkbox label {
   position: relative;
   display: inline-block;
@@ -255,12 +259,10 @@ body {
   border-radius: 7px;
   cursor: pointer;
 }
-
 .registration__checkbox input {
   position: absolute;
   right: 9999px;
 }
-
 .registration__checkbox input:checked + label::before {
   content: url("/images/mark.svg");
   display: block;
@@ -270,20 +272,17 @@ body {
   left: 2px;
   top: 3px;
 }
-
 .registration__checkbox-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 }
-
 .registration__checkbox-text a {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-decoration: underline;
 }
-
 .registration__button {
   margin-top: 30px;
 }
@@ -291,7 +290,6 @@ body {
 .warning {
   color: #CB2424;
 }
-
 .warning input {
   border: 2px solid #CB2424;
 }
